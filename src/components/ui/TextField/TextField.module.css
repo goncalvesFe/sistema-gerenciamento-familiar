@@ -1,0 +1,50 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+}
+
+.control {
+  position: relative;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: var(--control-height);
+  padding: 0 var(--space-4);
+  border: var(--border-input);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: var(--font-size-base);
+  transition: border-color var(--transition-fast);
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.input:focus,
+.input:focus-visible {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.withTrailing {
+  padding-right: calc(var(--touch-target) + var(--space-2));
+}
+
+.trailing {
+  position: absolute;
+  top: 50%;
+  right: calc((var(--control-height) - var(--touch-target)) / 2);
+  transform: translateY(-50%);
+  display: flex;
+}

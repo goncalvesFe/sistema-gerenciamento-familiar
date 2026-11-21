@@ -1,0 +1,62 @@
+:root {
+  /* cores */
+  --color-bg: #24283b;          /* fundo da página (Storm) */
+  --color-surface: #1f2335;     /* fundo dos inputs */
+  --color-border: #414868;      /* borda dos inputs */
+  --color-accent: #7aa2f7;      /* azul: bordas de botão, ícones, foco */
+  --color-accent-hover-bg: rgba(122, 162, 247, 0.10);
+  --color-text: #c0caf5;        /* texto principal */
+  --color-text-muted: #a9b1d6;  /* labels e aviso (não use #565f89: contraste ruim) */
+  --color-placeholder: #737aa2;
+
+  /* raio */
+  --radius-md: 12px;            /* inputs e botão Entrar */
+  --radius-lg: 16px;            /* botões da home */
+
+  /* espaçamento */
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-7: 28px;
+  --space-8: 32px;
+
+  /* tipografia */
+  --font-size-sm: 13px;
+  --font-size-label: 14px;
+  --font-size-base: 16px;
+  --font-size-tile: 17px;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --line-height-base: 1.4;
+
+  /* bordas */
+  --border-input: 1px solid var(--color-border);
+  --border-button: 1.5px solid var(--color-accent);
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+
+  /* tamanhos */
+  --touch-target: 44px;         /* área mínima de toque */
+  --control-height: 50px;       /* inputs e botão Entrar (celular) */
+  --icon-size-sm: 20px;         /* ícone do olho */
+  --icon-size-md: 24px;         /* ícone do botão da home (celular) */
+  --icon-size-lg: 28px;         /* ícone do botão da home (desktop) */
+  --tile-height: 72px;          /* botão da home (celular) */
+  --tile-height-lg: 120px;      /* botão da home (desktop) */
+  --tile-min-width: 220px;
+
+  /* larguras máximas */
+  --width-form: 340px;
+  --width-nav: 280px;
+  --width-nav-lg: 600px;
+
+  /* transição */
+  --transition-fast: 120ms ease;
+}
+
+/* desktop: ≥ 768px (media queries não aceitam var(), então o breakpoint é repetido nos módulos) */
+@media (min-width: 768px) {
+  :root {
+    --control-height: 48px;
+  }
+}
